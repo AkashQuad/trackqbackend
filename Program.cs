@@ -15,7 +15,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowSpecificOrigins",
         builder =>
         {
-            builder.WithOrigins("http://localhost:5174") 
+            builder.WithOrigins("http://localhost:5174","https://icy-sky-02355041e.6.azurestaticapps.net") 
                    .AllowAnyHeader()
                    .AllowAnyMethod()
                    .AllowCredentials();
